@@ -19,7 +19,7 @@ console.log(firstItem);
 
 //Code Here
 
-let lastItemRemoved = arr.splice(arr.length - 1, 6);
+let lastItemRemoved = arr.pop();
 console.log(arr);
 
 ////////// PROBLEM 3 //////////
@@ -44,7 +44,7 @@ for (let i = 0; i < family.length; i++) {
 
 // Do not edit the code below.
 var nums = [1,2,3,6,22,98,45,23,22,12];
-let evensArr = []
+let evensArr = [];
 // Do not edit the code above.
 
 /*
@@ -53,19 +53,40 @@ let evensArr = []
 
 //Code Here
 
+for (let i = 0; i < nums.length; i++) {
+  if ( nums[i] % 2 == 0) {
+    evensArr.push(nums[i])
+  } 
+}
+
+console.log(evensArr);
 
 
 ////////// PROBLEM 5 //////////
 
 // Do not edit the code below.
-var score = 74
+var score = 74;
 // Do not edit the code above.
 
 /*
-  Determine if the letter grade of the given variable 'score'. If the variable is a 90 or above, console log an 'A', between 80 and 89, console log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console log an 'F'.
+  Determine the letter grade of the given variable 'score'. If the variable is a 90 or above, console log an 'A', between 80 and 89, console log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console log an 'F'.
 */
 
 //Code Here
+
+let Grade = ["A", "B", "C", "D", "F"];
+
+if (score >= 90) {
+  console.log(Grade[0]);
+} else if (score <= 89 && score >= 80) {
+  console.log(Grade[1]);
+} else if (score <= 79 && score >= 70) {
+  console.log(Grade[2]);
+} else if (score <= 69 && score >= 60) {
+  console.log(Grade[3]);
+} else {
+  console.log(Grade[4]);
+}
 
 
 ////////// Intermediate Problems //////////
@@ -73,7 +94,7 @@ var score = 74
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
-var myFavoriteNumbers = [4,8,12,16,20,24];
+var myFavoriteNumbers = [4,8,12,16,20,24,29];
 // Do not edit the code above.
 
 /*
@@ -81,6 +102,9 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 */
 
 //Code Here
+
+let someNum = myFavoriteNumbers[4];
+console.log(someNum);
 
 
 ////////// PROBLEM 7 //////////
@@ -90,6 +114,15 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 
 //Code Here
 
+if (myFavoriteNumbers.length < 7) {
+  console.log("There are not enough elements in this array")
+} else if (myFavoriteNumbers.length > 7) {
+  someNum = myFavoriteNumbers[6];
+  console.log(someNum);
+} else {
+  someNum = myFavoriteNumbers[6];
+  console.log(someNum);
+}
 
 ////////// PROBLEM 8 //////////
 
@@ -101,6 +134,11 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 //Code Here
 
+for (let i = 0; i < listOfNumbers.length; i++) {
+  if (listOfNumbers[i] % 3 == 0) {
+    console.log(`${listOfNumbers[i]} is divisable by 3.`)
+  }
+}
 
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
