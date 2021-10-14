@@ -8,6 +8,9 @@ var arr = [10,20,30,40,50,60]
 
 //Code Here
 
+let firstItem = arr[0];
+console.log(firstItem);
+
 
 ////////// PROBLEM 2 //////////
 /*
@@ -15,6 +18,9 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
+
+let lastItemRemoved = arr.splice(arr.length - 1, 6);
+console.log(arr);
 
 ////////// PROBLEM 3 //////////
 
@@ -25,6 +31,10 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 /*
   Loop through the 'family' array and console.log every item.
 */
+
+for (let i = 0; i < family.length; i++) {
+  console.log(family[i]);
+}
 
 //Code Here
 
